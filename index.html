@@ -110,7 +110,23 @@
 
     </style>
 </head>
-<body>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagen1.jpg'); /* usa tu imagen subida */
+    background-size: cover;        /* cubre toda la pantalla */
+    background-position: center;   /* centra la imagen */
+    background-repeat: no-repeat;  /* evita repetición */
+    color: white;                  /* texto en blanco para contraste */
+}
+
+/* Fondo semitransparente detrás del contenido */
+.container {
+    background-color: rgba(0, 0, 0, 0.6); /* negro con 60% de transparencia */
+    padding: 20px;
+    border-radius: 10px;
+}
 
 <header>
     <h1>Maxpro Motos</h1>
@@ -194,7 +210,7 @@
                 <button>Comprar</button>
             </div>
             <div class="product-card">
-                <img src="imagen1.jpg" alt="Imagen 1">
+                
                 <p>Imagen 1</p>
                 <button>Comprar</button>
             </div>
