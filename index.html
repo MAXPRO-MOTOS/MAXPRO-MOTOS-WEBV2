@@ -1,19 +1,18 @@
 [11:50 a.m., 10/2/2026] Jorge Montoya: body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-image: url('imagen1.jpg'); /* usa tu imagen subida */
     background-size: cover;        /* cubre toda la pantalla */
     background-position: center;   /* centra la imagen */
     background-repeat: no-repeat;  /* evita repetición */
-    color: white;                  /* texto en blanco para contraste */
+    color: white;                  /* texto claro para contraste */
 }
 
-/* Fondo semitransparente detrás del contenido */
-.container {
-    background-color: rgba(0, 0, 0, 0.6); /* negro con 60% de transparencia */
-    padding: 20px;
+/* Fondo semitransparente opcional para que los productos se lean mejor */
+.container, .product-card {
+    background-color: rgba(0, 0, 0, 0.5); /* 50% transparencia negra */
     border-radius: 10px;
+    padding: 10px;
+}
+    
 }
 [11:57 a.m., 10/2/2026] Jorge Montoya: .product-card {
     background-color: rgba(255,255,255,0.1); /* fondo semitransparente */
