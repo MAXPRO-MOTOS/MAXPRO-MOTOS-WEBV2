@@ -18,12 +18,11 @@
         }
 
         /* Overlay para contenido */
-       .overlay {
-    background-color: rgba(0, 0, 0, 0.55); /* un poco más transparente */
-    min-height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-}
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         /* Cabecera */
@@ -38,8 +37,17 @@
             margin: 0;
             color: #ff5722;
         }
+        header .cart {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        header .cart img {
+            display: block;
+            width: 40px;
+        }
 
-        /* Sección de productos */
+        /* Productos */
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -47,41 +55,26 @@
             margin: 20px 0;
         }
         .product-card {
-    background-color: rgba(0,0,0,0.5); /* semitransparente más oscuro */
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6); /* sombra profunda */
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product-card:hover {
-    transform: translateY(-5px); /* ligero movimiento al pasar el mouse */
-    box-shadow: 0 12px 25px rgba(0,0,0,0.8); /* sombra más intensa */
-}
-            overflow: hidden;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
         }
         .product-card img {
             width: 100%;
             border-radius: 10px;
         }
-       .product-card button {
-    margin-top: 10px;
-    padding: 12px 20px;
-    background-color: #ff5722;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.product-card button:hover {
-    background-color: #ff784e;
-    transform: scale(1.05); /* pequeño zoom al pasar el mouse */
-}
+        .product-card button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff5722;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #ff784e;
         }
 
         /* Footer */
@@ -103,13 +96,15 @@
             }
         }
     </style>
-<header>
-    <h1>Maxpro Motos</h1>
-    <div class="cart">
-        <img src="carrito.png" alt="Carrito" width="40">
-        <span>$0</span>
-    </div>
-</header>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1>Maxpro Motos</h1>
+            <div class="cart">
+                <img src="carrito.png" alt="Carrito">
+                <span>$0</span>
+            </div>
         </header>
 
         <main>
@@ -135,7 +130,7 @@
                     <button>Comprar</button>
                 </div>
                 <div class="product-card">
-                    <img src="arnoldeleva1.jpg" alt="Arbol de leva 1">
+                    <img src="arnoldeleva1.jpg" alt="Árbol de leva 1">
                     <h2>Árbol de leva 1</h2>
                     <button>Comprar</button>
                 </div>
