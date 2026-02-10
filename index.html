@@ -10,16 +10,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('imagen1.jpg'); /* imagen de fondo */
+            background-image: url('imagen1.jpg'); /* fondo actual */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: white;
         }
 
-        /* Overlay para contenido */
+        /* Overlay */
         .overlay {
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0,0,0,0.6);
             min-height: 100vh;
             padding: 20px;
             box-sizing: border-box;
@@ -47,7 +47,7 @@
             width: 40px;
         }
 
-        /* Productos */
+        /* Productos actuales */
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -77,6 +77,27 @@
             background-color: #ff784e;
         }
 
+        /* Nuevas secciones (placeholders) */
+        section h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #ff5722;
+            text-align: center;
+            font-size: 1.8em;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .products-grid .product-card {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
         /* Footer */
         footer {
             background-color: rgba(0,0,0,0.7);
@@ -85,13 +106,13 @@
             color: white;
         }
 
-        /* Ajustes responsivos */
+        /* Ajustes responsive */
         @media (max-width: 600px) {
             header {
                 flex-direction: column;
                 text-align: center;
             }
-            .products {
+            .products, .products-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -108,6 +129,7 @@
         </header>
 
         <main>
+            <!-- Productos actuales -->
             <section class="products">
                 <div class="product-card">
                     <img src="amortiguadores1.jpg" alt="Amortiguador 1">
@@ -165,6 +187,57 @@
                     <button>Comprar</button>
                 </div>
             </section>
+
+            <!-- Sección: Productos Destacados -->
+            <section class="products-destacados">
+                <h2>Productos Destacados</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="" alt="Producto destacado">
+                        <h3>Producto Destacado 1</h3>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="" alt="Producto destacado">
+                        <h3>Producto Destacado 2</h3>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección: Productos Nuevos -->
+            <section class="productos-nuevos">
+                <h2>Productos Nuevos</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="" alt="Producto nuevo">
+                        <h3>Producto Nuevo 1</h3>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="" alt="Producto nuevo">
+                        <h3>Producto Nuevo 2</h3>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección: Ofertas -->
+            <section class="productos-ofertas">
+                <h2>Ofertas</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="" alt="Oferta 1">
+                        <h3>Oferta 1</h3>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="" alt="Oferta 2">
+                        <h3>Oferta 2</h3>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -173,4 +246,5 @@
     </div>
 </body>
 </html>
+
     
